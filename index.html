@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <title>Pimeh Tare-ere</title>
+</head>
+<body>
+  <!-- header starts here -->
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#top">Tare</a></div>
+      <div>
+        <ul class="desktop-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="mobile-nav">
+      <div class="logo"><a href="#hero">Tare</a></div>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header ends here -->
+
+  <!-- main starts here -->
+  <main>
+    <!-- hero section starts here -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero_pic-container">
+          <!-- <img
+            sizes="(max-width: 1800px) 40vw, 720px"
+            srcset="
+            assets/WhatsApp_Image_2024-09-27_at_21.20.58_afb45ea0_ykoywy_c_scale,w_200.jpg 200w,
+            assets/WhatsApp_Image_2024-09-27_at_21.20.58_afb45ea0_ykoywy_c_scale,w_601.jpg 601w,
+            assets/WhatsApp_Image_2024-09-27_at_21.20.58_afb45ea0_ykoywy_c_scale,w_720.jpg 720w"
+            src="assets/WhatsApp_Image_2024-09-27_at_21.20.58_afb45ea0_ykoywy_c_scale,w_720.jpg"
+            alt="profile picture"
+          /> -->
+        </div>
+        <div class="hero-text">
+          <p class="section-text_p1">Hello I'm</p>
+          <h1 class="title">Pimeh Tare-ere</h1>
+          <p class="section-text_p2">Frontend Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn contact-btn"
+              onclick="scrollToSection('contact')"
+            >
+              Contact
+            </button>
+            <button
+              class="btn cv-btn"
+              onclick="window.open('assets/Tare-ere Pimeh_Sep 21.pdf')"
+            >
+              Download CV
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="assets/linkedin.svg" alt="linkedin icon to profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/pimeh-tare-ere/', '_blank')"
+            >
+            <img
+              src="assets/github.svg" alt="github icon to profile"
+              class="icon"
+              onclick="window.open('https://www.github.com/PimehT', '_blank')"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section ends here -->
+
+    <!-- about section starts here -->
+    <section id="about" class="sections">
+      <div class="container about-contain">
+        <p class="section-text_p2">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <figure>
+              <img
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                srcset="
+                assets/about-pic-380.jpg 380w,
+                assets/about-pic-983.jpg 983w,
+                assets/about-pic-1200.jpg 1200w"
+                src="assets/about-pic-1200.jpg"
+                alt="picture with a quote 'passion led us here'"
+                class="about-pic"
+              >
+              <figcaption>Photo by <a href="https://unsplash.com/@afgprogrammer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mohammad Rahmani</a> on <a href="https://unsplash.com/photos/black-flat-screen-computer-monitor-oXlXu2qukGE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="assets/award.svg" alt="experience icon" class="icon">
+                <h3>Experience</h3>
+                <p>1 year <br>Frontend Development</p> 
+              </div>
+              <div class="details-container">
+                <img src="assets/certificate.svg" alt="certificate icon" class="icon">
+                <h3>Certificate</h3>
+                <p>ALX Africa <br>Software Engineering</p> 
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I'm <strong>Tare-ere Pimeh</strong>, a dedicated <strong>frontend developer</strong> passionate about creating seamless and user-friendly web experiences. 
+                With expertise in <strong>React.js</strong>, <strong>JavaScript</strong>, and responsive design, I enjoy transforming complex problems into efficient, elegant solutions. 
+                A graduate of the <strong>ALX Software Engineering Program</strong>, I've successfully built applications, including a fully functional to-do app, which enhanced my skills in modern web technologies. 
+                I love collaborating with others and am always eager to learn, grow, and stay updated with the latest trends. 
+                In my free time, I enjoy exploring new technologies and contributing to open-source projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/angles-down.svg"
+        alt="arrow icon to scroll down"
+        class="icon arrow"
+        onclick="scrollToSection('skills')"
+      >
+    </section>
+    <!-- about section ends here -->
+
+    <!-- skills section starts here -->
+    <section id="skills" class="sections">
+      <div class="container skill-contain">
+        <p class="section-text_p2">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="skills-details-container">
+          <div class="skills-containers">
+            <h2 class="skill-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="skills-containers">
+            <h2 class="skill-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="badge-container">
+                  <img src="assets/certificate.svg" alt="check badge icon" class="icon">
+                </div>
+                <div id="mySQL">
+                  <h3>mySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/angles-down.svg"
+        alt="arrow icon to scroll down"
+        class="icon skill-arrow"
+        onclick="scrollToSection('project')"
+      >
+    </section>
+    <!-- skills section ends here -->
+
+    <!-- project section starts here -->
+    <section id="project" class="sections">
+      <div class="container skill-contain">
+        <p class="section-text_p2">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/FitTrack.jpeg" alt="Project 1" class="project-img">
+              <h2 class="skills-sub-title project-title">FitTrack</h2>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://github.com/joshuakalule/FitTrack', '_blank')"
+                >Github</button>
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://github.com/joshuakalule/FitTrack', '_blank')"
+                >Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/TodoApp.png" alt="Project 2" class="project-img">
+              <h2 class="skills-sub-title project-title">Todo App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://github.com/PimehT/Todo_app', '_blank')"
+                >Github</button>
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://66eb4430f0678f20a64e3411--guileless-pavlova-01b7ff.netlify.app/', '_blank')"
+                >Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/FitTrack.jpeg" alt="Project 3" class="project-img">
+              <h2 class="skills-sub-title project-title">FitTrack</h2>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://github.com/joshuakalule/FitTrack', '_blank')"
+                >Github</button>
+                <button
+                  class="btn project-btn"
+                  onclick="window.open('https://github.com/joshuakalule/FitTrack', '_blank')"
+                >Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/angles-down-white.svg"
+        alt="arrow icon to scroll down"
+        class="icon project-arrow"
+        onclick="scrollToSection('contact')"
+      >
+    </section>
+    <!-- project section ends here -->
+
+    <!-- contact section starts here -->
+    <section id="contact" class="sections">
+      <div class="container about-contain">
+        <p class="section-text_p2">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="assets/envelope.svg"
+              alt="mail icon"
+              class="icon contact-icon"
+            />
+            <p><a href="mailto:tareerepimeh@gmail.com">tareerepimeh@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="assets/linkedin-black.svg"
+              alt="linkedin icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/pimeh-tare-ere/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+  </main>
+  <!-- main ends here -->
+
+  <!-- footer starts here -->
+  <footer>
+    <!-- <nav>
+      <div class="nav-links-container">
+        <ul class="desktop-links footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <p>Copyright &copy; 2024 Pimeh Tare-ere. All Rights Reserved.</p>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="script.js"></script>
+</body>
+</html>
